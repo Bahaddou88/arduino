@@ -13,7 +13,7 @@
     <script src="socket.io/socket.io.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="margin:3em;">
     <div class="container">
         <div class="jumbotron">
             <h2>Arduino Live Temperature/Humidity</h2>
@@ -22,10 +22,10 @@
         </div>
     </div>
 
-    <div>
-        <p>Move Slider to Change Brightness of LED</p> <input type="range" id= "inputSlider"  min="0" max="255" value="50" step="1" oninput="showValue(this.value)" />
+    <div >
+        <h3 style="color: aliceblue;">Move Slider higher than 127 to turn the lights on :)</h3> <input style="margin-top: 3em;margin-left: 17em;" type="range" id= "inputSlider"  min="0" max="255" value="50" step="1" oninput="showValue(this.value)" />
        
-        <br><br><span id="outputText">50</span>
+        <br><br><span id="outputText" style="color: aliceblue;">50</span>
     
         <script type="text/javascript">
                 var socket = io.connect();
